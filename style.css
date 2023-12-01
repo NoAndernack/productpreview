@@ -1,0 +1,43 @@
+body {
+  background-color: #FBCC9D;
+}
+
+@media screen and (max-width: 375px) {
+  .photo--desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .photo--mobile {
+    display: none;
+  }
+}
+.bloc__name {
+  font-family: "Montserrat 500", sans-serif;
+  text-transform: uppercase;
+  color: grey;
+}
+
+.bloc {
+  background-color: white;
+}
+
+.bloc__titre {
+  font-family: "Fraunces", serif;
+}
+
+.bloc__description {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+
+.bloc__price--real {
+  color: #52AD8C;
+  font-family: "Fraunces", serif;
+}
+
+.bloc__price--crossed {
+  color: grey;
+  font-family: "Montserrat 500", sans-serif;
+  text-decoration: line-through;
+}/*# sourceMappingURL=style.css.map */
