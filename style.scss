@@ -1,13 +1,36 @@
 body {
     background-color:#FBCC9D
  }
+ div {
+    margin: 0;
+}
 
 @media screen and (max-width:375px) {
      .photo--desktop {
          display: none;
 
      }
+     .photo--mobile{
+        border-radius:10% 10% 0% 0% ;
+     }
+     .pub{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        align-content:center;
 
+     }
+     .bloc{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        
+        
+     }
+     .bloc__name{
+        text-align: justify;
+     }
  }
 
 @media screen and (min-width:375px) and (max-width:1440px) {
@@ -26,24 +49,49 @@ body {
 
 .bloc  {
     background-color:white;
+    border-radius:0% 0% 10% 10% ;
+    
  }
 
 .bloc__titre  {
     font-family:'Fraunces', serif;
+    margin-left:2em;
+    
+ }
+ .bloc__name{
+    margin-left:2em;
  }
 
 .bloc__description {
     font-family:'Montserrat', sans-serif;
     color: grey;
+    margin-left:2em;
  }
 .bloc__price--real{
     color:#52AD8C;
     font-family: 'Fraunces', serif;
+    font-size: large;
+    
 
 }
 .bloc__price--crossed{
     color:grey;
     font-family:'Montserrat 500', sans-serif;
+    font-size: small;
     text-decoration: line-through;
+    display:flex;
+    align-items: center;
+    margin:20px;
+    
 
+}
+.bloc__price {
+    display:flex;
+
+}
+button{
+    background-color:#52AD8C;
+    border:0px ;
+    width:5em;
+    color:white;
 }
