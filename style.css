@@ -1,88 +1,97 @@
 body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #FBCC9D;
 }
 
-div {
-  margin: 0;
+.image {
+  position: relative;
+  text-align: center;
 }
 
-@media screen and (max-width: 375px) {
-  .photo--desktop {
-    display: none;
-  }
-  .photo--mobile {
-    border-radius: 10% 10% 0% 0%;
-  }
-  .pub {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-  .bloc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .bloc__name {
-    text-align: justify;
-  }
+.image__mobile {
+  border-radius: 10% 10% 0 0;
+  width: 100%;
+  display: block;
 }
-@media screen and (min-width: 375px) and (max-width: 1440px) {
-  .photo--mobile {
-    display: none;
-  }
+
+.image__desktop {
+  display: none;
 }
-.bloc__name {
-  font-family: "Montserrat 500", sans-serif;
+
+.infobloc {
+  background-color: white;
+  border-radius: 0 0 10% 10%;
+  padding: 2em;
+  text-align: center;
+}
+
+.infobloc__name {
   text-transform: uppercase;
   color: grey;
 }
 
-.bloc {
-  background-color: white;
-  border-radius: 0% 0% 10% 10%;
-}
-
-.bloc__titre {
+.infobloc__titre {
   font-family: "Fraunces", serif;
-  margin-left: 2em;
+  margin: 0;
 }
 
-.bloc__name {
-  margin-left: 2em;
-}
-
-.bloc__description {
-  font-family: "Montserrat", sans-serif;
+.infobloc__description {
   color: grey;
-  margin-left: 2em;
 }
 
-.bloc__price--real {
+.price {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.price__real {
   color: #52AD8C;
   font-family: "Fraunces", serif;
-  font-size: large;
+  font-size: 2em;
+  margin: 0;
+  text-shadow: #52AD8C;
 }
 
-.bloc__price--crossed {
+.price__crossed {
   color: grey;
-  font-family: "Montserrat 500", sans-serif;
   font-size: small;
   text-decoration: line-through;
-  display: flex;
-  align-items: center;
-  margin: 20px;
-}
-
-.bloc__price {
-  display: flex;
+  margin: 5px 0;
 }
 
 button {
   background-color: #52AD8C;
-  border: 0px;
-  width: 5em;
+  border: 0;
+  width: 10em;
+  height: 3em;
   color: white;
+  border-radius: 10%;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 375px) {
+  .image__mobile {
+    display: none;
+  }
+  .image__desktop {
+    border-radius: 10% 10% 0 0;
+    width: 50%;
+    display: block;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .infbloc {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
